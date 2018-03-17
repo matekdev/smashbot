@@ -10,4 +10,4 @@ which tournaments are going on the given day.
 
 Here is a link to the bot on twitter
 
-https://twitter.com/smashtourneybot
+https://twitter.com/WhenIsMelee
