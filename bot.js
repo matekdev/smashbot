@@ -69,7 +69,7 @@ function tweet(tourney) {
  * Checks for new tournaments coming up, and sends tweets if so.
  */
 function update() {
-	let date = new Date("2018-03-18 12:00 EST");
+	let date = new Date();
 
 	let year = date.getUTCFullYear();
 	let day = date.getUTCDate();
