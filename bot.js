@@ -46,7 +46,7 @@ tourneydata.forEach((tourney, index) => {
 
 // Main
 console.log('Twitter bot started.');
-console.log();
+console.log('\n');
 
 /**
  * Sends a tweet about a tournament.
