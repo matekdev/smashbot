@@ -69,34 +69,33 @@ var tourneydata = [
     ['Dont Park On The Grass 2018'             ,'12','15']
 ];
 
-// Function that gets passed whenever time interval gets reset
 function tweet(tourneydata, day, month) {
-    // Grab current day
     var date = new Date();
     var day = date.getDate();
     var month = date.getMonth() + 1;
+    var time = date.getUTCHours();
 
-    // Logs the day for testing
     console.log(day);
+    console.log(time);
     
-    // Checks if there are any matches within the array, if there are two the string returned is modified.
-    for (i = 0; i < tourneydata.length; ++i) {
-        if (tourneydata[i][1] == month) {
-            if (tourneydata[i][2] == day) {
-                if (tourneydata[i+1][2] == day) {
-                    return (tourneydata[i][0] + ' and ' + tourneydata[i+1][0] + ' are starting today!');
-                } else {
-                    return (tourneydata[i][0] + ' is starting today!');
+        if (time >= 17) {
+            for (i = 0; i < tourneydata.length; ++i) {
+                if (tourneydata[i][1] == month) {
+                    if (tourneydata[i][2] == day) {
+                        if (tourneydata[i+1][2] == day) {
+                            return (tourneydata[i][0] + ' and ' + tourneydata[i+1][0] + ' are starting today! ' + 'https://www.twitch.tv/directory/game/Super%20Smash%20Bros.%20Melee');
+                        } else {
+                            return (tourneydata[i][0] + ' is starting today! ' + tourneydata[i][3]);
+                        }
+                    }
                 }
             }
         }
-    }
 
     return '';
 
 }
 
-// Sends tweet
 function sendtweet() {
     T.post('statuses/update', { status: tweet(tourneydata) }, function(err, data, response) {
 
@@ -106,8 +105,7 @@ function sendtweet() {
     }
 }
 
-// Check and try to send tweet every 24 hours (in ms)
-setInterval(sendtweet, 8.64e+7);
+setInterval(sendtweet, 500000);
 
 
 
