@@ -18,5 +18,8 @@
   "homepage": "https://github.com/mzegar/smashtournybot#readme",
   "dependencies": {
     "twit": "^2.2.9"
+  },
+  "engines": {
+    "node": "^9.8.0"
   }
 }
