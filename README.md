@@ -20,3 +20,7 @@ heroku config:set TWITTER_ACCESS_TOKEN=...
 heroku config:set TWITTER_ACESSS_TOKEN_SECRET=...
 ```
 
+## Created by
+https://github.com/mzegar
+
+https://github.com/eth-p
