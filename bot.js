@@ -17,7 +17,25 @@ var T = new Twit({
 // Tourneydata for the year 2018
 //    TOURNEY DAY                               MONTH/DAY
 var tourneydata = [
-    ['EGLX 2018'                               ,'1','1', 'https://www.twitch.tv/directory/game/Super%20Smash%20Bros.%20Melee']
+    ['Start of Twitterbot 2019'                               ,'3','11', 'STARTING!']
+    ['NChi Ultra'                               ,'3','16', 'https://www.twitch.tv/directory/game/Super%20Smash%20Bros.%20Melee'],
+    ['Full Bloom 5'                               ,'3','23', 'https://www.twitch.tv/directory/game/Super%20Smash%20Bros.%20Melee'],
+    ['Battle of BC 3'                               ,'3','30', 'https://www.twitch.tv/directory/game/Super%20Smash%20Bros.%20Melee'],
+    ['Fight Pitt 9'                               ,'4','6', 'https://www.twitch.tv/directory/game/Super%20Smash%20Bros.%20Melee'],
+    ['Saving Mr. Lombardi'                               ,'4','13', 'https://www.twitch.tv/directory/game/Super%20Smash%20Bros.%20Melee'],
+    ['Pound 2019'                               ,'4','19', 'https://www.twitch.tv/directory/game/Super%20Smash%20Bros.%20Melee'],
+    ['Come to Papa 3'                               ,'4','27', 'https://www.twitch.tv/directory/game/Super%20Smash%20Bros.%20Melee'],
+    ['Regen 2019'                               ,'4','27', 'https://www.twitch.tv/directory/game/Super%20Smash%20Bros.%20Melee'],
+    ['GOML 2019'                               ,'5','17', 'https://www.twitch.tv/directory/game/Super%20Smash%20Bros.%20Melee'],
+    ['MomoCon 2019'                               ,'5','23', 'https://www.twitch.tv/directory/game/Super%20Smash%20Bros.%20Melee'],
+    ['Smash N Splash 5'                               ,'5','31', 'https://www.twitch.tv/directory/game/Super%20Smash%20Bros.%20Melee'],
+    ['Smash Summit 8'                               ,'6','13', 'https://www.twitch.tv/directory/game/Super%20Smash%20Bros.%20Melee'],
+    ['CEO 2019'                               ,'6','28', 'https://www.twitch.tv/directory/game/Super%20Smash%20Bros.%20Melee'],
+    ['The Pinnacle 2019'                               ,'7','5', 'https://www.twitch.tv/directory/game/Super%20Smash%20Bros.%20Melee'],
+    ['Low Tier City 7'                               ,'7','12', 'https://www.twitch.tv/directory/game/Super%20Smash%20Bros.%20Melee'],
+    ['Smash Factor 8'                               ,'7','26', 'https://www.twitch.tv/directory/game/Super%20Smash%20Bros.%20Melee'],
+    ['Super Smash Con 2019'                               ,'8','9', 'https://www.twitch.tv/directory/game/Super%20Smash%20Bros.%20Melee'],
+    ['Shine 2019'                               ,'8','23', 'https://www.twitch.tv/directory/game/Super%20Smash%20Bros.%20Melee']
 ];
 
 function tweet(tourneydata, day, month) {
